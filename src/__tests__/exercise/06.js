@@ -18,9 +18,9 @@ test('displays the users current location', async () => {
 
   let setReturnValue;
   const useMockCurrentPosition = () => {
-    const state = useState([]);
-    setReturnValue = state[1];
-    return state[0];
+    const [state, setState] = useState([]);
+    setReturnValue = setState;
+    return state;
   };
 
   useCurrentPosition.mockImplementation(useMockCurrentPosition);
