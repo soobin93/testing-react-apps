@@ -10,8 +10,8 @@ const styles = {
     color: 'white',
   },
   light: {
-    color: 'black',
     backgroundColor: 'white',
+    color: 'black',
   },
 }
 
